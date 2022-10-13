@@ -1,10 +1,13 @@
 *{
 	margin: 0;
 	padding: 0;
-
+body {
+	width: 100%;
+	height: 100%;
+}
 }
 section{
-	 background-color: #f9f7f3; 
+	/* background-color: #f9f7f3; */
 	 width: 100%;
 }
 footer{
@@ -20,8 +23,8 @@ footer{
 	background-size: auto;
 }
 .banner-picture{
-	width: 100%;
-	height: auto;
+	   width: 100vw;
+    height: 100vh;
 }
 
 .banner-caption{
@@ -58,7 +61,7 @@ p{
 	display: inline-block;
 	margin: 20px;
 	padding: 3px;
-	background-color: #f9f7f3; 
+/*	background-color: #f9f7f3; */
 	bolder:grey solid 3px;
 }
 .spnoibat li:hover{
@@ -131,7 +134,7 @@ button{
    	padding: 5px 8px;
    	border: none;
    	border-radius: 3px;
-   	
+   	background-color: ;
 }
 button:hover{
 	/*color: white;*/
@@ -141,11 +144,32 @@ button:hover{
 .sp a{
 	font-size: 20px;
 }
-@media screen and (max-width: 767px){
-	.menu ul{
-		width: 100%;
-	}
-	main{
-		width: 100%;
-	}
+
+
+
+@media screen and (max-width: 850px) {
+h1{
+	font-size: 35px;
+}
+p{
+	font-size: 18px;
+}
+ .icon{
+ 	height: 65px;
+ }
+ .spnoibat li{
+ 	list-style: none;
+	display: inline-block;
+	text-align: center;
+	margin: 50px;
+ }
+ .banner{
+ 	display: none;
+ }
+ .tintuc li{
+	list-style: none;
+	display: inline-block;
+	/*text-align: center;*/
+	margin: 50px;
+ }
 }
