@@ -1,0 +1,204 @@
+*{
+	margin: 0;
+	padding: 0;
+body {
+	width: 100%;
+	height: 100%;
+}
+}
+section{
+	/* background-color: #f9f7f3; */
+	 width: 100%;
+}
+
+.banner-picture {
+	max-width: 100%;
+	width: 100%;
+
+}
+
+.background{
+	background-size: auto;
+}
+.banner-picture{
+	   width: 100%;
+    height: auto;
+}
+h1{
+	text-align: center;
+	font-size: 50px;
+	margin-top: 60px;
+	font-family: sans-serif;
+}
+.item-title{
+	font-size: 19px;
+}
+.spnoibat ul {
+	text-align: center;
+	margin-bottom: 4px;
+}
+p{
+	text-align: center;
+	font-size: 20px;
+}
+.spnoibat li{
+	list-style: none;
+	display: inline-block;
+	margin: 20px;
+	padding: 14px;
+	padding-bottom: 6px;
+/*	background-color: #f9f7f3; */
+	border: 1px solid black;
+	border-radius: 3px;
+}
+.content a{
+	text-align: center;
+}
+a {
+	text-decoration: none;
+}
+.anhsp {
+	width: 22vw;
+	height: 24vw;
+	
+}
+.sp{
+	text-align: center;
+}
+.item-title{
+	margin-top: 10px;
+}
+.order-online ul{
+	text-align: center;
+}
+.order-online li{
+	list-style: none;
+	display: inline-block;
+	text-align: center;
+	margin: 50px;
+}
+.icon{
+	height: 100px;
+	width: auto;
+}
+.order{
+	text-align: center;
+}
+.order a{
+	text-align: center;
+	font-size: 15px;
+	padding: 10px;
+	border:1px solid black;
+	border-radius: 4px;
+	color: black;
+}
+.order a:hover{
+	background-color:#FFDEAD;
+	color:black;
+}
+.tintuc ul{
+	list-style: none;
+	margin-left: 5%;
+	margin-bottom: 0;
+}
+.tintuc li{
+	width: 26vw;
+	margin: 2vw;
+	display: inline-block;
+}
+.anhtintuc{
+	width: 300px;
+	height: 150px;
+}
+.tintuc p{
+	text-align: left;
+	font-size: 13px;
+}
+.tintuc h3{
+	font-size: 24px;
+	width: 300px;
+}
+.menu{
+	z-index: 1;
+}
+button{
+   	padding: 4px 7px;
+   	border: 1px solid black;
+   	border-radius: 3px;
+   	background-color: #FFF8DC;
+}
+span{
+	display: none;
+}
+/* button:hover {
+	background-color:#FFDEAD;
+} */
+button:hover span{
+	display: inline;
+}
+.sp a{
+	font-size: 14px;
+}
+.sp a{
+	padding: 10px;
+	border:1px solid black;
+	border-radius: 4px;
+	color: black;
+}
+.sp a:hover{
+	background-color:#FFDEAD;
+	color:black;
+}
+.sp1 div{
+	padding-bottom: 10px;
+}
+
+
+@media screen and (max-width: 720px) {
+h1{
+	font-size: 35px;
+}
+p{
+	font-size: 18px;
+}
+ .icon{
+ 	height: 65px;
+ }
+ .sp{
+ 	margin-top: 15px;
+ }
+ .spnoibat li{
+ 	list-style: none;
+	display: inline-block;
+	text-align: center;
+	margin:10px 10px;
+	/* margin: 50px; */
+ }
+ .banner{
+ 	display: none;
+ }
+ .tintuc li{
+	list-style: none;
+	display: inline-block;
+	/*text-align: center;*/
+	margin: 50px;
+ }
+ .anhsp{
+ 	width: 130px;
+ 	height: 150px;
+ }
+ .anhtintuc{
+ 	width: 270px;
+ 	height: 135px;
+ }
+ .tintuc h3{
+	font-size: 24px;
+	width: 270px;
+}
+.item-title{
+	font-size: 15px;
+}
+.order-online li {
+	width: 18%;
+}
+}
