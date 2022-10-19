@@ -1,0 +1,131 @@
+body {
+  background-image: url("../images/mainBackground.png");
+  background-repeat: repeat-y;
+  background-size: auto;
+}
+
+section {
+  display: flex;
+  width: 100%;
+  margin-top: 60px;
+  justify-content: space-around;
+}
+
+.choose_menu {
+  width: 20%;
+  height: 550px;
+  position: sticky;
+  top: 150px;
+  padding: 10px;
+  border: 3px solid #ccc;
+  border-radius: 5px;
+  background-color: #e2d1c3;
+}
+
+.choose_menu_title {
+  text-align: center;
+  background: linear-gradient(to bottom, #c79081 0%, #dfa579 100%);
+  height: 60px;
+  line-height: 60px;
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 7px;
+  letter-spacing: 1px;
+}
+
+.choose_menu_content{
+    height: 60px;
+    margin: 30px 0;
+    line-height: 60px;
+    border-radius: 7px;
+}
+
+.choose_menu_content:hover{
+    background-color: #ECE2DF;
+    transition: 0.2s ease;
+}
+
+.choose_menu_content a {
+  text-decoration: none;
+  color: #000;
+  margin-left: 20px;
+  font-size: 20px;
+  display: block;
+}
+
+.menu_container {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+}
+
+#category_title_1, #category_title_2, #category_title_3, #category_title_4 , #category_title_5{
+    height: 80px;
+}
+
+#category_title_1{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.category_title {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  padding-left: 25px;
+  background: linear-gradient(to bottom, #c79081 0%, #dfa579 100%);
+  border-radius: 20px 0 20px 0;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.list_item {
+  display: grid;
+  width: 100%;
+  gap: 50px;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit, 200px);
+}
+
+.each_item {
+  background-color: #efefef;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.product_name {
+  margin-left: 10px;
+  height: 60px;
+  line-height: 30px;
+}
+
+.product_name .each_product_name {
+  text-decoration: none;
+  color: #000;
+  text-transform: capitalize;
+}
+
+.thumbnail_image img {
+  width: 198px;
+  height: 200px;
+  border-radius: 7px 7px 0 0;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 850px) {
+  section{
+    justify-content: center;
+  }
+  .choose_menu{
+    display: none;
+  }
+  .menu_container{
+    width: 95%;
+  }
+}

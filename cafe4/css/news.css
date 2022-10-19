@@ -1,0 +1,118 @@
+     *
+      {
+         box-sizing: border-box;
+      }
+      .main{
+       background-color: white;
+      }
+      .heading h1
+      {
+         color: white;
+         text-align: center;
+         line-height: 100px;
+         font-size: 100px;
+         background-image: linear-gradient(to top, #fdfcfb 10%, #e2d1c3 100%);
+      }
+      .cards{
+         --spacing: 50px;
+         --colums: 3;
+         padding: 20px 80px;
+         display: flex;
+         margin-left: calc(-1 * var(--spacing));
+         flex-wrap: wrap;
+         background-color: white;
+
+      }
+      .card
+      {
+         display: flex;
+         overflow: hidden;   
+         width: calc(calc(100% / var(--colums)) - var(--spacing));
+         margin-left: var(--spacing);
+         margin-bottom: var(--spacing);
+         flex-direction: column;        
+      }
+        .image img
+      {
+         width: 100%;
+         height: 350px;
+          transition: transform .2s;
+      }
+      .image :hover img{
+          transform: scale(1.05); 
+      }
+      .image
+      {  
+         padding: 0 auto;
+         flex-shrink: 0;
+      }
+      .content{
+         margin-top: 5px;
+          display:flex ;
+          background-color: white;
+         flex-direction: column;
+         flex: 1;
+      }
+      .cardbot
+      {
+         margin-top: 6px;
+         display: flex;
+         flex-shrink: 0;
+      }
+      .cardbot p{
+         margin-left: 10px;
+         font-family: arial;
+      }
+      .cardtop
+      {
+         flex: 1;
+         margin-bottom: auto;
+         display: flex;
+      }
+      .title
+      {
+         text-decoration: none;
+         color: black;
+         font-size: 18px;
+         font-weight: 800;
+      }
+      .title:hover
+      {
+         color: brown;
+         text-shadow: 1px 1px brown;
+      }
+      .more{
+         display: inline-block;
+         margin-left: auto;
+         margin-right: auto;
+        
+      }
+      .more a{
+         text-decoration: none;
+         font-size: 15px;
+         font-weight: 600;
+         color: black;
+         padding: 5px 50px;
+         border: 2px solid black;
+         border-radius: 3px;
+      }
+      .more a:hover {
+         color: red;
+         border: 2px solid brown;
+      }
+      @media only screen and (max-width: 990px)
+      {
+         .cards{
+            --colums: 2;
+         }
+         .image img{
+            width: 100%;
+            height: 300px;
+         }
+      }
+      @media only screen and (max-width: 600px)
+      {
+         .cards{
+            --colums: 1;
+         }
+      }
