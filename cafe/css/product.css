@@ -1,0 +1,181 @@
+body {
+  background-image: url("../images/thumb_image/mainBackground.png");
+}
+
+section {
+  margin: 60px 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.list {
+  line-height: 50px;
+  width: 100%;
+  padding-left: 20px;
+  background: linear-gradient(to bottom, #c79081 0%, #dfa579 100%);
+  border-radius: 20px 0 20px 0;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.list a {
+  color: #fefefe;
+  text-decoration: none;
+}
+
+.image {
+  width: 40%;
+  text-align: center;
+  height: 400px;
+}
+
+.image img {
+  object-fit: cover;
+  width: 400px;
+  height: 400px;
+}
+
+.name {
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.info {
+  width: 60%;
+  padding-left: 50px;
+}
+
+.info div:not(.number) {
+  margin-bottom: 50px;
+}
+
+.misc {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.description{
+  font-style: italic;
+  font-size: 17px;
+}
+
+.rate {
+  width: 100%;
+}
+
+.buttons {
+  width: 100%;
+}
+
+.subtotal_price {
+  font-size: 22px;
+}
+
+.quantity {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 20px;
+  width: 100%;
+}
+
+.quantity button:not(.cart) {
+  border: none;
+  height: 30px;
+  width: 30px;
+  border-radius: 7px;
+  font-size: 20px;
+  background-color: #e7be89;
+}
+
+.quantity .number {
+  width: 40px;
+  text-align: center;
+}
+
+.cart {
+  width: 60%;
+  height: 50px;
+  margin-left: 180px;
+  border: none;
+  border-radius: 7px;
+  background-image: linear-gradient(135deg, #e6b980 10%, #eacda3 100%);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.cart:hover {
+  color: #fff;
+  transition: 0.2s ease;
+}
+
+.card {
+  height: 40px;
+}
+
+.checkout_method {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  font-style: italic;
+  font-size: 18px;
+}
+
+.checkout_method img {
+  padding: 0 7px;
+}
+
+.subtotal_price::after {
+  content: ".000 VND";
+}
+
+.price {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  section {
+    margin-top: 30px;
+  }
+  .container {
+    width: 100%;
+  }
+  .image {
+    width: 60%;
+    margin-bottom: 30px;
+  }
+  .image img{
+    width: 400px;
+    height: 400px;
+  }
+  .list {
+    border-radius: 0;
+  }
+  .info {
+    width: 90%;
+    padding: 0;
+  }
+  .cart{
+    margin-left: 30px;
+  }
+  .quantity {
+    justify-content: space-evenly;
+  }
+  .quantity button:not(.cart) {
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 7px;
+    font-size: 30px;
+  }
+}

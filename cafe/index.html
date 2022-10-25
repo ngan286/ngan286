@@ -5,33 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/Header_n_Footer.css" />
-    <link rel="stylesheet" href="home.css" />
-    <!-- CSS only -->
-<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/home.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="images/thumb_image/favicon.png"
+    />
     <script src="js/header.js"></script>
-    <title>Ane's Family</title>
+    <title>Home - Ane's Family</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar" id="main">
+    <header style="height: 0;">
+      <nav
+        class="navbar"
+        id="main"
+        style="background-image: none; background-color: transparent"
+      >
         <div class="logo">
-          <a href="javascript:void(0)" class="openbtn" id="openbtn" onclick="openNav()"
+          <a
+            href="javascript:void(0)"
+            class="openbtn"
+            id="openbtn"
+            onclick="openNav()"
             >&#9776;</a
           >
           <a href="index.html" class="mainLogo" id="mainLogo"
-            ><img src="images/mainLogoSmol.png" alt=""
+            ><img src="images/thumb_image/mainLogoSmol.png" alt=""
           /></a>
         </div>
         <div class="menu">
-          <a href="index.html">home</a>
-          <a href="#">order</a>
-          <a href="#">news</a>
-          <a href="#">recruitment</a>
-          <a href="login.html"><i class="bi bi-person-fill"></i></a>
+          <a class="menu_button" href="index.html">home</a>
+          <a class="menu_button" href="order.html">order</a>
+          <a class="menu_button" href="news.html">news</a>
+          <a class="menu_button" href="contact_us.html">contact us</a>
+          <a class="menu_button" href="cart.html"><i class="bi bi-cart3"></i></a>
+          <a class="menu_button" href="login.html"><i class="bi bi-box-arrow-in-right"></i></a>
         </div>
         <div id="mySidenav" class="sidenav">
           <div>
@@ -39,143 +51,251 @@
               >&#9776;</a
             >
           </div>
-          <a href="index.html"><img src="images/mainLogoSmol30.png" alt="" /></a>
+          <a href="index.html"
+            ><img src="images/thumb_image/mainLogoSmol30.png" alt=""
+          /></a>
           <a href="index.html"><i class="bi bi-house"></i> home</a>
-          <a href="#"><i class="bi bi-chat-right-text"></i> order</a>
-          <a href="#"><i class="bi bi-newspaper"></i> news</a>
-          <a href="#"><i class="bi bi-person-plus"></i> recruitment</a>
-          <a href="login.html"><i class="bi bi-person-badge"></i> account</a>
+          <a href="order.html"><i class="bi bi-chat-right-text"></i> order</a>
+          <a href="news.html"><i class="bi bi-newspaper"></i> news</a>
+          <a href="contact_us.html"
+            ><i class="bi bi-voicemail"></i> contact us</a
+          >
+          <a href="cart.html"><i class="bi bi-cart3"></i> cart</a>
+          <a href="login.html"><i class="bi bi-box-arrow-in-right"></i> login</a>
         </div>
       </nav>
     </header>
     <section>
       <div class="banner">
-        <div class = "background">
-            <img class="banner-picture" src="banner.png">
+        <div class="background">
+          <img
+            class="banner-picture"
+            id="banner_picture"
+            src="images/index/banner_test.jpg"
+            style="height: 100%; object-fit: contain; object-position: top left;"
+          />
         </div>
-        </div> 
-    </div>
-    <div class="content">
-        <h1><b>Các sản phẩm nổi bật</b></h1>
-        <p> Các sản phẩm bán chạy nhất của chúng tôi</p>
+      </div>
+      <div class="content">
+        <h1><b>Featured products</b></h1>
+        <p>Our hottest-selling products</p>
         <div class="spnoibat">
-            <ul>
-                <li>
-                    <div class="sp1">
-                        <img class ="anhsp" src="cafesua.jpg" alt="Cà-phê-sữa-image">
-                        <div class="item-title"><b>Cà phê sữa</b></div>
-                        <div class="item-price">50,000đ</div>
-                        <a class="item-button-buy" href="./menu.html">
-                          <i class="fas fa-cart-plus"></i>
-                          <div><button><i class="bi bi-cart-plus"></i></button></div>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="sp2">
-                        <img class = "anhsp" src="cafeden.jpg" alt="Cà-phê-đen-image">
-                        <div class="item-title"><b>Cà phê đen</b></div>
-                        <div class="item-price">50,000đ</div>
-                        <a class="item-button-buy" href="./menu.html">
-                          <i class="fas fa-cart-plus"></i>
-                          <div><button><i class="bi bi-cart-plus"></i></button></div>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="sp3">
-                        <img class="anhsp" src="capuchino.jpg">
-                        <div class="item-title"><b>Capuchino</b></div>
-                        <div class="item-price">50,000đ</div>
-                        <a class="item-button-buy" href="./menu.html">
-                          <i class="fas fa-cart-plus"></i>
-                          <div><button><i class="bi bi-cart-plus"></i></button></div>
-                        </a>
-                    </div>
-                </li>
-            </ul>
+          <ul>
+            <li>
+              <div class="sp1">
+                <img
+                  class="anhsp"
+                  src="images/index/cafesua.jpg"
+                  alt="Cà-phê-sữa-image"
+                />
+                <div class="item-title"><b>Milk Coffee</b></div>
+                <div class="item-price">20,000đ</div>
+                <a class="item-button-buy" href="order.html">
+                  <div>
+                    <button>
+                      <i class="bi bi-cart-plus"></i> <span>Order</span>
+                    </button>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="sp1">
+                <img
+                  class="anhsp"
+                  src="images/index/cafeden.jpg"
+                  alt="Cà-phê-đen-image"
+                />
+                <div class="item-title"><b>Black coffee</b></div>
+                <div class="item-price">20,000đ</div>
+                <a class="item-button-buy" href="order.html">
+                  <div>
+                    <button>
+                      <i class="bi bi-cart-plus"></i> <span>Order</span>
+                    </button>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="sp1">
+                <img class="anhsp" src="images/index/capuchino.jpg" />
+                <div class="item-title"><b>Cappuccino</b></div>
+                <div class="item-price">20,000đ</div>
+                <a class="item-button-buy" href="order.html">
+                  <div>
+                    <button>
+                      <i class="bi bi-cart-plus"></i> <span>Order</span>
+                    </button>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="sp1">
+                <img class="anhsp" src="images/index/bacxiu.jpg" alt="" />
+                <div class="item-title"><b>White coffee</b></div>
+                <div class="item-price">20,000đ</div>
+                <a class="item-button-buy" href="order.html">
+                  <div>
+                    <button>
+                      <i class="bi bi-cart-plus"></i> <span>Order</span>
+                    </button>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="sp1">
+                <img class="anhsp" src="images/index/mousse.jpg" />
+                <div class="item-title"><b> Mousse cake</b></div>
+                <div class="item-price">20,000đ</div>
+                <a class="item-button-buy" href="order.html">
+                  <div>
+                    <button>
+                      <i class="bi bi-cart-plus"></i> <span>Order</span>
+                    </button>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="sp1">
+                <img class="anhsp" src="images/index/tiramisu.jpg" />
+                <div class="item-title"><b>Tiramisu</b></div>
+                <div class="item-price">20,000đ</div>
+                <a class="item-button-buy" href="order.html">
+                  <div>
+                    <button>
+                      <i class="bi bi-cart-plus"></i> <span>Order</span>
+                    </button>
+                  </div>
+                </a>
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="sp"><a href="#"> Xem thêm món </a> </div>
+        <div class="sp">
+          <a href="order.html"
+            >See more<span> <i class="bi bi-arrow-right"></i></span
+          ></a>
+        </div>
         <div class="order-online">
-            <h1><b>Đặt đơn online</b></h1>
-            <p> Bạn hoàn toàn có thể gọi đồ online với Ane's Family - FreeShip 5km </p>
-            <div class="order-online">
-                <ul>
-                    <li>
-                        <div class = "icon-call">
-                            <img class="icon" src="logophone.png">
-                            <p>Gọi ngay 19001010</p>
-                                </div>
-                    </li>
-                    <li>
-                        <div class = "icon-thanhtoan">
-                            <img class="icon" src="logodathang.png">
-                            <p>Đặt hàng trực tiếp</p>
-                    </div>
-                    </li>
-                    <li>
-                        <div class = "icon-vanchuyen">
-                            <img class="icon" src="logovanchuyen.png">
-                            <p>Vận chuyển nhanh chóng </p>
-                    </div>
-                    </li>
-                    <li>
-                        <div class = "icon-thanhtoan">
-                            <img class="icon" src="logothanhtoan.png">
-                            <p>Thanh toán tại nhà</p>
-                    </div>
-                    </li>
-                </ul>
-            </div>
-            
-            
-            
-            <div class="order"><a href="#" class="order-online"> Đặt đơn ngay </a></div>
-        </div>
-        <div class="tintuc">
-            <h1><b>Tin tức nổi bật</b></h1>
+          <h1><b>Order online</b></h1>
+          <p>You can order online with Ane's Family - FreeShip 5km</p>
+          <div class="order-online">
             <ul>
-                <li>
-                    <div class="voucher">
-                        <img class="anhtintuc" src="voucher.jpg">
-                        <h3>Tặng 100 Voucher Tri Ân Khách Hàng</h3>
-                        <p>Tặng ngay 100 voucher cho 100 khách hàng đầu tiên ...</p>
-                        <a href="#">Đọc ngay</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="khaitruong">
-                        <img class="anhtintuc" src="khaitruong.png">
-                        <h3>Tưng Bừng Khai Trương Cơ Sở Mới</h3>
-                        <p>Khai trương tưng bừng Mua 1 tặng 1 áp dụng cho ...</p>
-                        <a href="#">Đọc ngay</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="covid">
-                        <img class="anhtintuc" src="covid.jpg">
-                        <h3>Thông Báo Đóng Cửa Do Dịch Covid</h3>
-                        <p> Ane's Family tạm đóng cửa từ ngày...</p>
-                        <a href="#">Đọc ngay</a>
-                    </div>
-                </li>
+              <li>
+                <div class="icon-call">
+                  <img class="icon" src="images/index/logophone.png" />
+                  <p>Call now 19001010</p>
+                </div>
+              </li>
+              <li>
+                <div class="icon-thanhtoan">
+                  <img class="icon" src="images/index/logodathang.png" />
+                  <p>Order directly</p>
+                </div>
+              </li>
+              <li>
+                <div class="icon-vanchuyen">
+                  <img class="icon" src="images/index/logovanchuyen.png" />
+                  <p>Fast shipping</p>
+                </div>
+              </li>
+              <li>
+                <div class="icon-thanhtoan">
+                  <img class="icon" src="images/index/logothanhtoan.png" />
+                  <p>Cash on delivery</p>
+                </div>
+              </li>
             </ul>
+          </div>
+
+          <div class="order">
+            <a href="order.html" class="order-online">
+              Order now<span> <i class="bi bi-arrow-right"></i></span>
+            </a>
+          </div>
         </div>
-    </div>
+        <h1 style="font-family: 'Raleway', Arial, Helvetica, sans-serif;">News</h1>
+        <div class="tintuc">
+          <div class="tt">
+            <img class="anhtintuc" src="images/index/voucher.jpg" />
+            <h3>Giveaway 100 vouchers</h3>
+            <p>Giveaway 100 vouchers for the first 100 ...</p>
+            <a href="news.html">Read now</a>
+          </div>
+          <div class="tt">
+            <img class="anhtintuc" src="images/index/khaitruong.png" />
+            <h3>Grand opening</h3>
+            <p>Grand opening - Buy 1 get 1 free ...</p>
+            <a href="news.html">Read now</a>
+          </div>
+          <div class="tt">
+            <img class="anhtintuc" src="images/index/covid.jpg" />
+            <h3>Temporary closed due to Covid-19</h3>
+            <p>Temporary closed due to Covid-19 from...</p>
+            <a href="news.html">Read now</a>
+          </div>
+        </div>
+      </div>
     </section>
     <footer>
       <div>
-        <a href=""><img src="images/mainLogoMedium.png" alt="" /></a>
+        <a href=""
+          ><img src="images/thumb_image/mainLogoMedium.png" alt=""
+        /></a>
       </div>
       <div>
         <p>about us</p>
-        <p>We are group 5 of class IT3-K62 with the theme of a cafe shop. Hope you guys enjoy our product.</p>
-      </div>
-      <div>
         <p>
-          <i class="bi bi-c-circle"></i> 2022 Ane Team
+          We are group 12+1 of class IT3-K62 with the theme of a cafe shop. Hope
+          you guys enjoy our product.
         </p>
       </div>
+      <div>
+        <p><i class="bi bi-c-circle"></i> 2022 Ane Team</p>
+      </div>
     </footer>
+    <script>
+      var navbar = document.querySelector(".navbar");
+      var width = window.innerWidth;
+      var image = document.querySelector("#banner_picture");
+      var menucolor = document.getElementsByClassName('menu_button');
+      for(var i=0; i < menucolor.length; i++){
+              menucolor[i].style.color = 
+              "#fff";
+            }
+      if (width < 1000){
+        navbar.style.backgroundImage = 
+          "linear-gradient(to bottom, #c79081 0%, #dfa579 100%)";
+      }
+      window.onscroll = () => {
+        if (width > 850) {
+          if (
+            document.body.scrollTop > (image.clientHeight - 70) || 
+            document.documentElement.scrollTop > (image.clientHeight - 70)
+          ) {
+            navbar.style.backgroundImage = 
+              "linear-gradient(to bottom, #c79081 0%, #dfa579 100%)";
+              for(var i=0; i < menucolor.length; i++){
+              menucolor[i].style.color = 
+              "#231c16";
+            }
+          } else {
+            navbar.style.backgroundImage = "none";
+            for(var i=0; i < menucolor.length; i++){
+              menucolor[i].style.color = 
+              "#fff";
+            }
+          }
+        }
+        else{
+          navbar.style.backgroundImage =
+              "linear-gradient(to bottom, #c79081 0%, #dfa579 100%)";
+        }
+      };
+    </script>
   </body>
 </html>

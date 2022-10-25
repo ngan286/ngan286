@@ -1,0 +1,137 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: white;
+}
+img{
+	object-fit: cover;
+}
+.main{
+	margin: 50px;
+	font-family: arial;
+}
+p{
+	margin: 0;
+	padding: 5px 0;
+}
+.heading{
+	font-size: 20px;
+    line-height: 32px;
+    color: #53382c;
+    text-transform: uppercase;
+    display: block;
+    font-weight: normal !important
+}
+.date{
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+.date p{
+	display: inline;
+	margin-left: 8px;
+}
+.image img{
+	width: 500px;
+}
+.image {
+	width: 100%;
+	margin-bottom: 20px;
+	text-align: center;
+
+}
+.image p[title="menu"]{
+	font-weight: 600;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	font-size: 20px;
+	color: brown;
+
+}
+hr{
+	border-top: 1px dashed;
+}
+span{
+	font-weight: 600;
+	color: black;
+}
+.tags1, .tags2
+{
+	background-color: #f2f5f8;
+	padding: 15px;
+    margin-bottom: 20px;
+}
+.tags1
+{
+	font-size: 16px;
+
+}
+.tags2 p{
+	display: inline-block;
+	margin-right: 40px;
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: rgb(65, 105, 255);
+	color: white;
+	padding: 10px;
+}
+.tags2 p[title="two"]{
+	background-color: #ffff;
+	color: black;
+}
+.tags2 a{
+	text-decoration: none;
+	margin-right: 0px;
+	display: inline-block;
+	color: black;
+}
+.tags2 a:hover{
+	color: brown;
+}
+.info a{
+	text-decoration: none;
+	display: block;
+	color: brown;
+	margin-top: 15px;
+}
+.info h2
+{
+	font-size: 30px;
+    line-height: 32px;
+    color: #53382c;
+    text-transform: uppercase;
+}
+.facebook p{
+	color: blue;
+	font-size: 13px;
+	display: inline;
+}
+.facebook
+{
+	margin-bottom: 10px;
+	margin-top: 40px;
+}
+
+.boxcomment textarea{
+	width: 100%;
+	height: 100px;
+	padding: 15px 20px;
+	border-radius: 15px;
+	border: 1px solid #86b0b6;
+}
+.boxcomment .btn {
+	float: right;
+
+}
+.btn input, .btn button{
+	padding: 4px 10px;
+	background-color: skyblue;
+	cursor: pointer;
+}
+    @media only screen and (max-width :742px)
+   {
+   	.image img{
+	width: 250px;
+      
+   }
+}
